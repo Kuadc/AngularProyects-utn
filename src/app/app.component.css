@@ -1,87 +1,13 @@
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(119, 119, 119);
-    height: 100px;
+
+
+
+.spinner{
+    animation: rotate 1s linear infinite;
 
 }
 
-a{
-    color: azure;
-    text-decoration: none;
-    padding: 20px;
-}
-
-a:hover{
-    color: aquamarine;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-}
-
-.title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-svg{
-    margin: auto;
-}
-
-h1{
-    margin: auto;
-    font-size: 3rem;
-}
-
-
-p{
-    padding: 1rem;
-    margin: auto;
-}
-
-.wraper{
-    margin-top: 3rem;
-    width: 300px;
-    margin: auto;
-}
-
-input{
-    width: 95%;
-    height: 30px;
-    background-color: aliceblue;
-    border-radius: 3px;
-    border-color: rgb(10, 127, 230);
-    margin-top: 1rem;
-    box-shadow: none;
-    padding-left: 10px;
-    
-
-}
-
-input:focus{
-    border-color: rgb(68, 153, 226);
-    background-color: bisque;
-    outline: none;
-}
-
-button{
-    margin-top: 1rem;
-    width: 100%;
-    border-radius: 3px;
-    height: 30px;
-    background-color: rgb(119, 189, 230);
-    border-color: aliceblue;
-
-}
-
-button:hover{
-    background-color: rgb(147, 204, 236);
-}
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,47 @@
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.skeleton-text {
+    width: 70%;
+    height: 0.4rem;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 1rem;
+    border-radius: 0.25rem;
+  }
+
+.skeleton-input{
+    width: 70%;
+    height: 1.7rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.skeleton-svg {
+    animation: skeleton-loading-svg 1s linear infinite alternate;
+  }
+
+  @keyframes skeleton-loading-svg {
+    0% {
+      fill: hsl(200, 20%, 80%);
+    }
+    100% {
+      fill: hsl(200, 20%, 95%);
+    }
+  }
+
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+  }
+  
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 20%, 80%);
+    }
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }

@@ -1,0 +1,25 @@
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.warning{
+    color: red  ;
+    font-size: small;
+}
+
+.accountcontainer {
+    display: flex;
+}
+
+.account {
+    color: rgb(52, 52, 53);
+    margin-top: 30px;
+}
+
+.loginaccount{ 
+    color: #049DD9;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: transparent ;
+}
