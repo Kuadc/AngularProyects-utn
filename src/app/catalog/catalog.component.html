@@ -1,4 +1,46 @@
-<div>
-    <p>catalog of products</p>
-</div>
+        <h1>Catalog of Movies and Series</h1>
+        <div class="Poster">
+            
+            <p class="poster-title">{{poster.Title}}</p>
+            <p>Year: {{poster.Year}}</p>
+            
+        </div>
+            <div class="poster-image">
+                <img src={{poster.Poster}} alt="">
+                <img src="https://media.ambito.com/p/50af8b36262a8d71db1f383f3190f868/adjuntos/239/imagenes/040/442/0040442194/breaking-badwebp.png" alt="breaking-bad">
+            </div>
+            <div class="container">
+                <p ><strong>Genre:</strong> {{poster.Genre}}</p>
+                
+                <p><strong>Plot:</strong> {{poster.Plot}}</p>
+            </div>
+
+        <div>
+            <form  id="search-by-title" >
+                <fieldset>
+                    <legend>Search Movies By Title</legend>
+                </fieldset>
+                <div class="search-by-title">
+                    <p >Title:</p>
+                    <input #idtitle type="text" id="t" name="t" >
+ 
+                    <button (click)="searchMovies(idtitle.value)" id="search-by-title" type="button">Search</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="title" id="search-by-title-results">
+            <h3>Results</h3>
+            <ul>
+                @for(movie of movies; track movie.imdbID){
+                    <li class="card">
+                        <h4>{{movie.Title}}</h4>
+                        <p>{{movie.Year}}</p>
+                        <img src="{{movie.Poster}}" alt="">
+                    </li>
+                }
+            </ul>
+        </div>
+
 

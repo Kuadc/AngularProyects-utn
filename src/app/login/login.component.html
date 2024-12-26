@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <button type="submit" >Register</button>
+        <button type="submit" [disabled]="myform.invalid" >Register</button>
     </form>
     <div class="accountcontainer">
         <p class="account">Don´t have an account? <a  class="loginaccount" routerLink="/register">Register</a></p>

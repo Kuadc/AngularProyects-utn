@@ -23,3 +23,15 @@
     margin-top: 30px;
     background-color: transparent ;
 }
+
+button:disabled{
+    background-color: #8f8f8f;
+    color: white;
+    cursor: not-allowed;
+}
+
+button:notdisabled{
+    background-color: #049DD9;
+    color: white;
+    cursor: pointer;
+}

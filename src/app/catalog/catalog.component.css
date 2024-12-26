@@ -1,0 +1,64 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(159, 193, 199);
+
+}
+
+h1{
+    margin: 1rem;
+    text-align: center;
+}
+
+.Poster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.poster-title{
+    margin: 1rem;
+    font-size: xx-large;
+}
+.poster-image{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 1024px;
+    height: 500px;
+}
+
+.poster-image img{
+    border-radius: 10px;
+}
+
+
+.container{
+    margin-top: 1rem;
+    width: 1024px;
+}
+
+.container p
+{
+    margin-bottom: 1rem;
+}
+
+.search-by-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 1rem;
+}
