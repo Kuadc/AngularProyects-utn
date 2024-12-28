@@ -15,7 +15,7 @@ import { CatalogService } from './catalog.service';
 export class CatalogComponent {
   poster:any = [];
   movies: any=[]; // Initialize it as an array
-  baseUrl = "http://www.omdbapi.com/?apikey=74e485c7&s=";
+  baseUrl = "https://www.omdbapi.com/?apikey=74e485c7&s=";
   fullUrl = "";
   constructor( private catalogServices: CatalogService) {}
 
